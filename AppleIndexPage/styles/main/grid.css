@@ -15,12 +15,12 @@
 }
 
 .grid-wrapper h4 {
-  margin: 0;
+  margin: 53px auto 0px;
   font-size: 40px;
 }
 
 .grid-wrapper h5 {
-  margin: 0;
+  margin: 10px 0px 0px 0px;
   font-size: 21px;
 }
 
@@ -36,6 +36,14 @@
 .grid-wrapper .iphone-links a::after {
   content: ">";
   padding-left: 6px;
+}
+
+.grid-wrapper .efto-header {
+  color: rgba(0, 0, 0, 0);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/promo_logo_aaw__dq7tgf4m5ieu_large.png);
 }
 
 .grid-wrapper .item {
@@ -59,6 +67,39 @@
           align-items: center;
 }
 
+.grid-wrapper .item .content .watch-header {
+  color: rgba(0, 0, 0, 0);
+  margin: 53px auto 0px;
+  font-size: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/logo_watch.png);
+}
+
+.grid-wrapper .item .studio-display {
+  background-image: url(../../assets/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
+}
+
+.grid-wrapper .item .mac-studio {
+  background-image: url(../../assets/promo_macstudio_avail__byhwkp0o4gty_large.jpg);
+}
+
+.grid-wrapper .item .iphone13 {
+  background-image: url(../../assets/promo_iphone13_avail__frc36u35m0ii_large.jpg);
+}
+
+.grid-wrapper .item .watch {
+  background-image: url(../../assets/promo_watch_lte__djeaso7ukrsm_large.jpg);
+}
+
+.grid-wrapper .item .escape-from {
+  background-image: url(../../assets/promo_efto__9gdao7fl4sy6_large.jpg);
+}
+
+.grid-wrapper .item .pachinko {
+  background-image: url(../../assets/promo_pachinko__ge0kbw3uikmm_large.jpg);
+}
+
 .grid-wrapper .item-img {
   z-index: 1;
   width: 1262px;
@@ -75,6 +116,5 @@
   top: auto;
   -webkit-transform: translatex(-50%);
   transform: translatex(-50%);
-  background-image: url(../../assets/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
 }
 /*# sourceMappingURL=grid.css.map */
