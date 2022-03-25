@@ -1,0 +1,81 @@
+
+
+.grid {
+    //padding: 5px;
+    //background-color: green;
+    //width: 100%;
+
+    &-wrapper {
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto 50%;
+        padding-left: 12px;
+        padding-top: 12px;
+        
+        
+        .item-wrapper {
+            padding-right: 12px;
+            padding-bottom: 12px;
+            background-color: rgba(255,255,255,0.92);
+        }
+
+
+        h4 {
+            margin: 0;
+            font-size: 40px;
+        }
+        
+        h5 {
+            margin: 0;
+            font-size: 21px;
+        }
+
+        .iphone-links {
+            margin-top: 14px;
+            font-size: 21px;
+    
+            a {
+                color: #06c;
+    
+                &::after {
+                    content: ">";
+                    padding-left: 6px;
+                }
+            }
+        }
+
+        .item {
+            position: relative;
+            overflow: hidden;
+            height: 580px;
+
+            .content {
+                position: relative;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &-img {
+                z-index: 1;
+                width: 1262px;
+                height: 580px;
+                background-size: 1262px 580px;
+                background-repeat: no-repeat;
+                position: absolute;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                left: calc(50% + 0px);
+                right: auto;
+                bottom: 0px;
+                top: auto;
+                -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
+                background-image: url(../../assets/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
+            }
+        }
+
+    }
+}

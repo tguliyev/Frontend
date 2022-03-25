@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@font-face {
+  font-family: SfPro Light;
+  src: url(../../fonts/FontsFree-Net-SFProText-Light-1.ttf);
+}
+
+@font-face {
+  font-family: SfPro Regular;
+  src: url(../../fonts/FontsFree-Net-SFProText-Regular.ttf);
+}
+
+header {
+  width: 100%;
+  font-family: SfPro Light;
+}
+
+header .content {
+  width: 100%;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+header nav > ul {
+  margin: auto;
+  height: 44px;
+  width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 22px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav > ul li {
+  height: 100%;
+}
+
+header nav > ul a {
+  opacity: .8;
+  height: 100%;
+  font-size: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #f5f5f7;
+  padding: 0px 8px;
+}
+
+header nav > ul a:hover {
+  opacity: 1;
+}
+
+header nav > ul .apple {
+  background-image: url("../../assets/icons/logo.svg");
+}
+
+header nav > ul .search {
+  background-image: url("../../assets/icons/search.svg");
+}
+
+header nav > ul .shop {
+  background-image: url("../../assets/icons/shop.svg");
+}
+
+header nav > ul .logo {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+header nav > ul .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .charity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: SfPro Regular;
+  background-color: #f5f5f7;
+  letter-spacing: -.02em;
+}
+
+header .charity a {
+  color: #06c;
+  font-size: 14px;
+}
+
+header .charity a::after {
+  content: "↗";
+  padding-left: 4px;
+  vertical-align: -15%;
+}
+
+header .charity * {
+  padding-right: 14px;
+}
+/*# sourceMappingURL=header.css.map */

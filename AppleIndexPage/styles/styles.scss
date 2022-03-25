@@ -1,0 +1,24 @@
+$white: #fff;
+
+@font-face {
+    font-family: SfPro Regular;
+    src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+// - - - - - GENERAL - - - - - 
+body {
+    font-family: SfPro Regular;
+    font-style: normal;
+    letter-spacing:  -.01em;
+    background-color: grey;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+    
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+}

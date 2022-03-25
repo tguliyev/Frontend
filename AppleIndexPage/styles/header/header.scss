@@ -1,0 +1,102 @@
+@font-face {
+    font-family: SfPro Light;
+    src: url(../../fonts/FontsFree-Net-SFProText-Light-1.ttf);
+}
+
+@font-face {
+    font-family: SfPro Regular;
+    src: url(../../fonts/FontsFree-Net-SFProText-Regular.ttf);
+}
+
+// - - - - HEADER - - - -
+header {
+    width: 100%;
+    font-family: SfPro Light;
+    
+    .content {
+        width: 100%;
+    }
+    
+    // NAVIGATION
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.92);
+        
+        > ul {
+            margin: auto;
+            height: 44px;
+            width: 980px;
+            display: flex;
+            padding: 0px 22px;
+            justify-content: space-between;
+            
+            li {
+                height: 100%;
+            }
+
+            a {
+                opacity: .8;
+                height: 100%;
+                font-size: 12px;
+                transition: 0.3s;
+                color: #f5f5f7;
+                padding: 0px 8px;
+    
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .apple {
+                background-image: url("../../assets/icons/logo.svg");
+            }
+    
+            .search {
+                background-image: url("../../assets/icons/search.svg");
+            }
+    
+            .shop {
+                background-image: url("../../assets/icons/shop.svg");
+            }
+            
+            .logo {
+                display: block;
+                background-repeat: no-repeat;
+            }
+    
+            .item {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    // CHARITY BLOCK
+    .charity {
+        display: flex;
+        padding: 20px 0px;
+        align-items: center;
+        justify-content: center;
+        font-family: SfPro Regular;
+        background-color: #f5f5f7;
+        letter-spacing: -.02em;
+
+        a {
+            color: #06c;
+            font-size: 14px;
+        }
+
+        a::after {
+            content: "↗";
+            padding-left: 4px;
+            vertical-align: -15%;
+        }
+
+        * {
+            padding-right: 14px;
+        }
+    }
+}

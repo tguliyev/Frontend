@@ -1,0 +1,170 @@
+@font-face {
+    font-family: SfPro Light;
+    src: url(../../fonts/FontsFree-Net-SFProText-Light-1.ttf);
+}
+
+.collection {
+
+    .iphone-links {
+        margin-top: 14px;
+        font-size: 21px;
+
+        a {
+            color: #06c;
+
+            &::after {
+                content: ">";
+                padding-left: 6px;
+            }
+        }
+    }
+
+    h3 {
+        margin: 0px;
+        font-size: 28px;
+        margin-top: 6px;
+        font-family: SfPro Light;
+    }
+
+    .iphone13pro {
+        position: relative;
+        height: 692px;
+        overflow: hidden;
+
+        .content {
+            display: flex;
+            padding-top: 55px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div {
+            //letter-spacing: 1px;
+
+            h2 {
+                margin: 0px;
+                font-size: 56px;
+                font-weight: bold;
+                letter-spacing: -.005em;
+                width: 100%;
+                text-align: center;
+            }
+            
+
+        }
+    
+        .iphone-img {
+            position: absolute;
+            top: auto;
+            right: auto;
+            bottom: 0px;
+            left: calc(50% + 0px);
+            margin: 0;
+            padding: 0;
+            border: 0; 
+            z-index: -1;
+            background-image: url(../../assets/hero_iphone13pro.jpg);
+            width: 3008px;
+            height: 736px;
+            background-size: 3008px 736px;
+            background-repeat: no-repeat;
+            transform: translatex(-50%);
+        }
+    }
+
+
+    .iphoneSE {
+        position: relative;
+        height: 704px;
+        overflow: hidden;
+
+        .content {
+            display: flex;
+            //padding-top: 55px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .iphonese-logo {
+                height: 55px;
+                width: 100%;
+                background-position: center;
+                background-image: url(../../assets/logo_iphonese.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+        p {
+            font-size: 21px;
+            line-height: 1.2;
+            font-weight: 600;
+            letter-spacing: .011em;
+        }
+
+        .iphone-img {
+            position: absolute;
+            top: auto;
+            right: auto;
+            bottom: 0px;
+            left: calc(50% + 0px);
+            margin: 0;
+            padding: 0;
+            border: 0; 
+            z-index: -1;
+            background-image: url(../../assets/iphonese.jpg);
+            width: 3008px;
+            height: 736px;
+            background-size: 3008px 736px;
+            background-repeat: no-repeat;
+            transform: translatex(-50%);
+        }
+    }
+
+    .ipad-air {
+        position: relative;
+        height: 704px;
+        overflow: hidden;
+
+        .content {
+            display: flex;
+            padding-top: 253px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            right: 337px;
+
+            .iphonese-logo {
+                height: 55px;
+                width: 100%;
+                background-position: center;
+                background-image: url(../../assets/logo_ipadair.png);
+                background-repeat: no-repeat;
+            }
+        }
+        
+        h3 {
+            color: #fff;
+
+        }
+
+        .iphone-img {
+            position: absolute;
+            top: auto;
+            right: auto;
+            bottom: 0px;
+            left: calc(50% + 0px);
+            margin: 0;
+            padding: 0;
+            border: 0; 
+            z-index: -1;
+            background-image: url(../../assets/ipadair.jpg);
+            width: 3008px;
+            height: 736px;
+            background-size: 3008px 736px;
+            background-repeat: no-repeat;
+            transform: translatex(-50%);
+        }
+    }
+}

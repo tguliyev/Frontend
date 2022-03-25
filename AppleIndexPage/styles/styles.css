@@ -1,0 +1,22 @@
+@font-face {
+  font-family: SfPro Regular;
+  src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+body {
+  font-family: SfPro Regular;
+  font-style: normal;
+  letter-spacing: -.01em;
+  background-color: grey;
+}
+
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body ul {
+  padding: 0;
+  list-style: none;
+}
+/*# sourceMappingURL=styles.css.map */
