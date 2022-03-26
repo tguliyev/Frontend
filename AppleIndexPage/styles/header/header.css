@@ -11,28 +11,34 @@
 
 header {
   width: 100%;
+  position: relative;
   font-family: SfPro Light;
 }
 
 header .content {
-  width: 100%;
+  width: inherit;
 }
 
-header nav {
-  width: 100%;
+header .content > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: inherit;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header .content > nav {
+  position: fixed;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.92);
 }
 
-header nav > ul {
+header .content > nav > ul {
   margin: auto;
   height: 44px;
   width: 980px;
@@ -45,78 +51,56 @@ header nav > ul {
           justify-content: space-between;
 }
 
-header nav > ul li {
-  height: 100%;
+header .content > nav > ul li {
+  height: inherit;
+  padding: 0px 8px;
 }
 
-header nav > ul a {
+header .content > nav > ul li a {
   opacity: .8;
   height: 100%;
   font-size: 12px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #f5f5f7;
-  padding: 0px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header nav > ul a:hover {
+header .content > nav > ul li a:hover {
   opacity: 1;
 }
 
-header nav > ul .apple {
-  background-image: url("../../assets/icons/logo.svg");
+header .content > nav > ul li:first-child {
+  padding-left: 0px;
 }
 
-header nav > ul .search {
-  background-image: url("../../assets/icons/search.svg");
+header .content > nav > ul li:last-child {
+  padding-right: 0px;
 }
 
-header nav > ul .shop {
-  background-image: url("../../assets/icons/shop.svg");
-}
-
-header nav > ul .logo {
-  display: block;
-  background-repeat: no-repeat;
-}
-
-header nav > ul .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .charity {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+header .content > div {
+  padding: 64px 0px 20px;
+  letter-spacing: -.022em;
   font-family: SfPro Regular;
   background-color: #f5f5f7;
-  letter-spacing: -.02em;
 }
 
-header .charity a {
+header .content > div img {
+  padding-right: 14px;
+}
+
+header .content > div a {
   color: #06c;
   font-size: 14px;
 }
 
-header .charity a::after {
+header .content > div a::after {
   content: "↗";
-  padding-left: 4px;
-  vertical-align: -15%;
-}
-
-header .charity * {
-  padding-right: 14px;
+  padding-left: 3px;
 }
 /*# sourceMappingURL=header.css.map */

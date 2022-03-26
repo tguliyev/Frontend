@@ -11,92 +11,82 @@
 // - - - - HEADER - - - -
 header {
     width: 100%;
+    position: relative;
     font-family: SfPro Light;
     
     .content {
-        width: 100%;
-    }
-    
-    // NAVIGATION
-    nav {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0,0,0,0.92);
-        
-        > ul {
-            margin: auto;
-            height: 44px;
-            width: 980px;
+        width: inherit;
+
+        > * {
             display: flex;
-            padding: 0px 22px;
-            justify-content: space-between;
+            width: inherit;
+            align-items: center;
+            justify-content: center;
+        }
+
+        // - - - - NAVIGATION - - - -
+        > nav {
+            position: fixed;
+            z-index: 10;
+            background-color: rgba(0,0,0,0.92);
             
-            li {
-                height: 100%;
+            > ul {
+                margin: auto;
+                height: 44px;
+                width: 980px;
+                display: flex;
+                padding: 0px 22px;
+                justify-content: space-between;
+                
+                li {
+                    height: inherit;
+                    padding: 0px 8px;
+
+                    a {
+                        opacity: .8;
+                        height: 100%;
+                        font-size: 12px;
+                        transition: 0.3s;
+                        color: #f5f5f7;
+                        display: flex;
+                        align-items: center;
+            
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+
+                    &:first-child {
+                        padding-left: 0px;
+                    }
+
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+
+        // - - - - UNICEF - - - -
+        > div {
+            padding: 64px 0px 20px;
+            letter-spacing: -.022em;
+            font-family: SfPro Regular;
+            background-color: #f5f5f7;
+
+            img {
+                padding-right: 14px;
             }
 
             a {
-                opacity: .8;
-                height: 100%;
-                font-size: 12px;
-                transition: 0.3s;
-                color: #f5f5f7;
-                padding: 0px 8px;
-    
-                &:hover {
-                    opacity: 1;
+                color: #06c;
+                font-size: 14px;
+
+                &::after {
+                    content: "↗";
+                    padding-left: 3px;
                 }
             }
-
-            .apple {
-                background-image: url("../../assets/icons/logo.svg");
-            }
-    
-            .search {
-                background-image: url("../../assets/icons/search.svg");
-            }
-    
-            .shop {
-                background-image: url("../../assets/icons/shop.svg");
-            }
-            
-            .logo {
-                display: block;
-                background-repeat: no-repeat;
-            }
-    
-            .item {
-                display: flex;
-                align-items: center;
-            }
-        }
-    }
-
-    // CHARITY BLOCK
-    .charity {
-        display: flex;
-        padding: 20px 0px;
-        align-items: center;
-        justify-content: center;
-        font-family: SfPro Regular;
-        background-color: #f5f5f7;
-        letter-spacing: -.02em;
-
-        a {
-            color: #06c;
-            font-size: 14px;
-        }
-
-        a::after {
-            content: "↗";
-            padding-left: 4px;
-            vertical-align: -15%;
-        }
-
-        * {
-            padding-right: 14px;
         }
     }
 }

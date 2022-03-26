@@ -5,18 +5,44 @@
 
 body {
   font-family: SfPro Regular;
-  font-style: normal;
-  letter-spacing: -.01em;
   background-color: white;
 }
 
 body a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
 body ul {
-  padding: 0;
   list-style: none;
+}
+
+body .main-img {
+  bottom: 0px;
+  position: absolute;
+  left: calc(50% + 0px);
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+}
+
+body .details-links {
+  font-size: 21px;
+  margin-top: 14px;
+}
+
+body .details-links a {
+  color: #06c;
+}
+
+body .details-links a:hover {
+  border-bottom: solid 1px;
+}
+
+body .details-links a::after {
+  content: ">";
+  padding-left: 6px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,3 @@
-$white: #fff;
-
 @font-face {
     font-family: SfPro Regular;
     src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
@@ -8,17 +6,43 @@ $white: #fff;
 // - - - - - GENERAL - - - - - 
 body {
     font-family: SfPro Regular;
-    font-style: normal;
-    letter-spacing:  -.01em;
     background-color: white;
 
     a {
-        color: $white;
+        color: white;
         text-decoration: none;
     }
     
     ul {
-        padding: 0;
         list-style: none;
+    }
+
+    // General for all main images
+    .main-img {
+        bottom: 0px;
+        position: absolute;
+        left: calc(50% + 0px);
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        transform: translatex(-50%);
+    }
+
+    .details-links {
+        font-size: 21px;
+        margin-top: 14px;
+
+        a {
+            color: #06c;
+
+            &:hover {
+                border-bottom: solid 1px;
+            }
+
+            &::after {
+                content: ">";
+                padding-left: 6px;
+            }
+        }
     }
 }

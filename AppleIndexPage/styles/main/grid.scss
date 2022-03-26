@@ -4,14 +4,11 @@
 
     .grid-wrapper {
         display: grid;
-        //padding-top: 12px;
         padding-left: 12px;
-        background-color: white;
         grid-template-columns: auto 50%;
 
         .item-wrapper {
-            padding-right: 12px;
-            padding-bottom: 12px;
+            padding: 0px 12px 12px 0px;
             background-color: rgba(255,255,255,0.92);
 
             .item {
@@ -19,22 +16,21 @@
                 overflow: hidden;
                 position: relative;
 
-                .apple-tv {
-                    height: 100%;
-                    justify-content: space-between;
-                }
-
+                // For all items in the grid
                 .content {
                     z-index: 2;
                     display: flex;
                     position: relative;
                     align-items: center;
                     flex-direction: column;
+                }
+
+                // For fist two rows in the grid
+                .sale {
 
                     h4 {
                         font-size: 40px;
                         margin: 53px auto 0px;
-                        //margin: 0px;
                     }
 
                     h5 {
@@ -43,58 +39,39 @@
                     }
 
                     .watch-header {
-                        font-size: 56px;
+                        height: 56px;
+                        width: 100%;
                         margin: 53px auto 0px;
-                        color: rgba(0, 0, 0, 0);
                         background-position: center;
                         background-repeat: no-repeat;
                         background-image: url(../../assets/logo_watch.png);
                     }
+                }
 
-                    .efto-header {
+                // For last row in the grid
+                .apple-tv {
+                    height: 100%;
+                    justify-content: space-between;
+
+                    .header {
+                        height: 40px;
                         width: 100%;
+                        margin-top: 53px;
                         color: rgba(0, 0, 0, 0);
                         background-position: center;
                         background-repeat: no-repeat;
-                        background-image: url(../../assets/promo_logo_aaw__dq7tgf4m5ieu_large.png);
                     }
 
-                    .pochinko-header {
+                    .bottom {
                         width: 100%;
-                        color: rgba(0, 0, 0, 0);
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-image: url(../../assets/logo_light__cfvl40z2nzau_large.png);
-                    }
 
-                    .iphone-links {
-                        font-size: 21px;
-                        margin-top: 14px;
-
-                        a {
-                            color: #06c;
-
-                            &::after {
-                                content: ">";
-                                padding-left: 6px;
-                            }
-                        }
-                    }
-
-                    .efto-bottom {
-                        width: 100%;
-                        //height: 108px;
-                        
                         > div {
-                            //remove color
                             color: white;
                             width: 100%;
                             height: 108px;
-                            //height: 100%;
                             padding: 4px auto 0px;
                             background-repeat: no-repeat;
                             background-position: center;
-                            background-image: url(../../assets/promo_logo_efto__c391lzc975ua_large.png);
                         }
 
                         a {
@@ -105,23 +82,6 @@
                             line-height: 1.2em;
                             width: 100%;
                             text-align: center;
-                        }
-                    }
-
-                    .pochinko-bottom {
-                        width: 100%;
-                        //height: 108px;
-                        
-                        > div {
-                            //remove color
-                            color: white;
-                            width: 100%;
-                            height: 108px;
-                            //height: 100%;
-                            padding: 4px auto 0px;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-image: url(../../assets/promo_logo_pachinko__ec7gsyeb4uqa_large.png);
                         }
 
                         h6 {
@@ -131,61 +91,54 @@
                             color: #f5f5f7;
                             text-align: center;
                         }
+                    }
 
-                        a {
-                            padding-top: 16px;
-                            padding-bottom: 32px;
-                            display: block;
-                            font-size: 17px;
-                            line-height: 1.2em;
-                            width: 100%;
-                            text-align: center;
+                    .efto_h {
+                        background-image: url(../../assets/largest/promo_logo_aaw__dq7tgf4m5ieu_large.png);
+                    }
+
+                    .pochinko_h {
+                        background-image: url(../../assets/largest/logo_light__cfvl40z2nzau_large.png);
+                    }
+
+                    .efto_b {
+                        > div {
+                            background-image: url(../../assets/largest/promo_logo_efto__c391lzc975ua_large.png);
+                        }
+                    }
+
+                    .pochinko_b {
+                        > div {
+                            background-image: url(../../assets/largest/promo_logo_pachinko__ec7gsyeb4uqa_large.png);
                         }
                     }
                 }
 
-                .item-img {
-                    border: 0;
-                    margin: 0;
-                    top: auto;
-                    z-index: 1;
-                    padding: 0;
-                    right: auto;
-                    bottom: 0px;
+                // For the main images of all items
+                .main-img {
                     height: 580px;
                     width: 1262px;
-                    position: absolute;
-                    left: calc(50% + 0px);
-                    transform: translatex(-50%);
-                    background-repeat: no-repeat;
                     background-size: 1262px 580px;
-                    -webkit-transform: translatex(-50%);
                 }
 
                 .studio-display {
-                    background-image: url(../../assets/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
+                    background-image: url(../../assets/largest/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
                 }
-
                 .mac-studio {
-                    background-image: url(../../assets/promo_macstudio_avail__byhwkp0o4gty_large.jpg);
+                    background-image: url(../../assets/largest/promo_macstudio_avail__byhwkp0o4gty_large.jpg);
                 }
-
                 .iphone13 {
-                    background-image: url(../../assets/promo_iphone13_avail__frc36u35m0ii_large.jpg);
+                    background-image: url(../../assets/largest/promo_iphone13_avail__frc36u35m0ii_large.jpg);
                 }
-
                 .watch {
-                    background-image: url(../../assets/promo_watch_lte__djeaso7ukrsm_large.jpg);
+                    background-image: url(../../assets/largest/promo_watch_lte__djeaso7ukrsm_large.jpg);
                 }
-
                 .escape-from {
-                    background-image: url(../../assets/promo_efto__9gdao7fl4sy6_large.jpg);
+                    background-image: url(../../assets/largest/promo_efto__9gdao7fl4sy6_large.jpg);
                 }
-
                 .pachinko {
-                    background-image: url(../../assets/promo_pachinko__ge0kbw3uikmm_large.jpg);
+                    background-image: url(../../assets/largest/promo_pachinko__ge0kbw3uikmm_large.jpg);
                 }
-
             }
         }
     }

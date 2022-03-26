@@ -8,42 +8,16 @@
 }
 
 .collection > div {
-  margin-bottom: 12px;
-}
-
-.collection .iphone-links {
-  margin-top: 14px;
-  font-size: 21px;
-}
-
-.collection .iphone-links a {
-  color: #06c;
-  margin-right: 35px;
-}
-
-.collection .iphone-links a::after {
-  content: "\003E";
-  padding-left: 6px;
-}
-
-.collection h3 {
-  margin: 0px;
-  font-size: 28px;
-  margin-top: 6px;
-  font-weight: 400;
-}
-
-.collection .iphone13pro {
-  position: relative;
   height: 692px;
+  margin-bottom: 12px;
+  position: relative;
   overflow: hidden;
 }
 
-.collection .iphone13pro .content {
+.collection > div .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 55px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -54,147 +28,80 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 55px;
+  position: relative;
 }
 
-.collection .iphone13pro div h2 {
+.collection > div .content p {
+  margin: 0px;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.collection > div .content h2 {
   margin: 0px;
   font-size: 56px;
-  font-weight: 600;
-  letter-spacing: -.005em;
   width: 100%;
   text-align: center;
 }
 
-.collection .iphone13pro .iphone-img {
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 0px;
-  left: calc(50% + 0px);
-  margin: 0;
-  padding: 0;
-  border: 0;
-  z-index: -1;
-  background-image: url(../../assets/hero_iphone13pro.jpg);
-  width: 3008px;
-  height: 736px;
-  background-size: 3008px 736px;
-  background-repeat: no-repeat;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
+.collection > div .content h3 {
+  margin: 6px 0px 0px 0px;
+  font-size: 28px;
+  font-weight: 400;
 }
 
-.collection .iphoneSE {
-  position: relative;
-  height: 704px;
-  overflow: hidden;
-}
-
-.collection .iphoneSE .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.collection .iphoneSE .content .iphonese-logo {
+.collection > div .content .header-logo {
   height: 55px;
   width: 100%;
   background-position: center;
-  background-image: url(../../assets/logo_iphonese.png);
   background-repeat: no-repeat;
 }
 
-.collection .iphoneSE p {
-  margin: 0px;
-  padding-top: 55px;
-  font-size: 21px;
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: .011em;
+.collection > div .content a {
+  margin-right: 35px;
 }
 
-.collection .iphoneSE .iphone-img {
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 0px;
-  left: calc(50% + 0px);
-  margin: 0;
-  padding: 0;
-  border: 0;
-  z-index: -1;
-  background-image: url(../../assets/iphonese.jpg);
-  width: 3008px;
-  height: 736px;
-  background-size: 3008px 736px;
-  background-repeat: no-repeat;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
+.collection > div.iphone13pro .main-img {
+  background-image: url(../../assets/largest/hero_iphone13pro.jpg);
 }
 
-.collection .ipad-air {
-  position: relative;
-  height: 704px;
-  overflow: hidden;
+@media only screen and (max-height: 775px) {
+  .collection > div.iphone13pro .main-img {
+    background-image: url(../../assets/iphone13pro.jpg);
+  }
 }
 
-.collection .ipad-air .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.collection > div.iphoneSE .header-logo {
+  background-image: url(../../assets/largest/logo_iphonese.png);
+}
+
+.collection > div.iphoneSE .main-img {
+  background-image: url(../../assets/largest/iphonese.jpg);
+}
+
+.collection > div.ipadair .content {
   padding-top: 253px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
   right: 337px;
 }
 
-.collection .ipad-air .content .iphonese-logo {
-  height: 55px;
-  width: 100%;
-  background-position: center;
-  background-image: url(../../assets/logo_ipadair.png);
-  background-repeat: no-repeat;
+.collection > div.ipadair .content .header-logo {
+  background-image: url(../../assets/largest/logo_ipadair.png);
 }
 
-.collection .ipad-air h3 {
+.collection > div.ipadair .content h3 {
   color: #fff;
 }
 
-.collection .ipad-air .iphone-img {
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 0px;
-  left: calc(50% + 0px);
-  margin: 0;
-  padding: 0;
-  border: 0;
+.collection > div.ipadair .main-img {
+  background-image: url(../../assets/largest/ipadair.jpg);
+}
+
+.collection > div .main-img {
   z-index: -1;
-  background-image: url(../../assets/ipadair.jpg);
   width: 3008px;
   height: 736px;
   background-size: 3008px 736px;
-  background-repeat: no-repeat;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
 }
 /*# sourceMappingURL=collection.css.map */
