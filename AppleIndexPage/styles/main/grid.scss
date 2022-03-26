@@ -1,121 +1,192 @@
 
 
 .grid {
-    //padding: 5px;
-    //background-color: green;
-    //width: 100%;
 
-    &-wrapper {
-        background-color: white;
+    .grid-wrapper {
         display: grid;
-        grid-template-columns: auto 50%;
+        //padding-top: 12px;
         padding-left: 12px;
-        padding-top: 12px;
-        
-        
+        background-color: white;
+        grid-template-columns: auto 50%;
+
         .item-wrapper {
             padding-right: 12px;
             padding-bottom: 12px;
             background-color: rgba(255,255,255,0.92);
-        }
 
-
-        h4 {
-            margin: 53px auto 0px;
-            font-size: 40px;
-        }
-        
-        h5 {
-            margin: 10px 0px 0px 0px;
-            font-size: 21px;
-        }
-
-        .iphone-links {
-            margin-top: 14px;
-            font-size: 21px;
-    
-            a {
-                color: #06c;
-    
-                &::after {
-                    content: ">";
-                    padding-left: 6px;
-                }
-            }
-        }
-
-        .efto-header {
-            color: rgba(0, 0, 0, 0);
-            width: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url(../../assets/promo_logo_aaw__dq7tgf4m5ieu_large.png);
-        }
-
-        .item {
-            position: relative;
-            overflow: hidden;
-            height: 580px;
-
-            .content {
-                position: relative;
-                z-index: 2;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                .watch-header {
-                    color: rgba(0, 0, 0, 0);
-                    margin: 53px auto 0px;
-                    font-size: 56px;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-image: url(../../assets/logo_watch.png);
-                }
-            }
-
-            .studio-display {
-                background-image: url(../../assets/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
-            }
-
-            .mac-studio {
-                background-image: url(../../assets/promo_macstudio_avail__byhwkp0o4gty_large.jpg);
-            }
-
-            .iphone13 {
-                background-image: url(../../assets/promo_iphone13_avail__frc36u35m0ii_large.jpg);
-            }
-
-            .watch {
-                background-image: url(../../assets/promo_watch_lte__djeaso7ukrsm_large.jpg);
-            }
-
-            .escape-from {
-                background-image: url(../../assets/promo_efto__9gdao7fl4sy6_large.jpg);
-            }
-
-            .pachinko {
-                background-image: url(../../assets/promo_pachinko__ge0kbw3uikmm_large.jpg);
-            }
-
-            &-img {
-                z-index: 1;
-                width: 1262px;
+            .item {
                 height: 580px;
-                background-size: 1262px 580px;
-                background-repeat: no-repeat;
-                position: absolute;
-                border: 0;
-                margin: 0;
-                padding: 0;
-                left: calc(50% + 0px);
-                right: auto;
-                bottom: 0px;
-                top: auto;
-                -webkit-transform: translatex(-50%);
-                transform: translatex(-50%);
+                overflow: hidden;
+                position: relative;
+
+                .apple-tv {
+                    height: 100%;
+                    justify-content: space-between;
+                }
+
+                .content {
+                    z-index: 2;
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    flex-direction: column;
+
+                    h4 {
+                        font-size: 40px;
+                        margin: 53px auto 0px;
+                        //margin: 0px;
+                    }
+
+                    h5 {
+                        font-size: 21px;
+                        margin: 10px 0px 0px 0px;
+                    }
+
+                    .watch-header {
+                        font-size: 56px;
+                        margin: 53px auto 0px;
+                        color: rgba(0, 0, 0, 0);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url(../../assets/logo_watch.png);
+                    }
+
+                    .efto-header {
+                        width: 100%;
+                        color: rgba(0, 0, 0, 0);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url(../../assets/promo_logo_aaw__dq7tgf4m5ieu_large.png);
+                    }
+
+                    .pochinko-header {
+                        width: 100%;
+                        color: rgba(0, 0, 0, 0);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url(../../assets/logo_light__cfvl40z2nzau_large.png);
+                    }
+
+                    .iphone-links {
+                        font-size: 21px;
+                        margin-top: 14px;
+
+                        a {
+                            color: #06c;
+
+                            &::after {
+                                content: ">";
+                                padding-left: 6px;
+                            }
+                        }
+                    }
+
+                    .efto-bottom {
+                        width: 100%;
+                        //height: 108px;
+                        
+                        > div {
+                            //remove color
+                            color: white;
+                            width: 100%;
+                            height: 108px;
+                            //height: 100%;
+                            padding: 4px auto 0px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-image: url(../../assets/promo_logo_efto__c391lzc975ua_large.png);
+                        }
+
+                        a {
+                            padding-top: 16px;
+                            padding-bottom: 32px;
+                            display: block;
+                            font-size: 17px;
+                            line-height: 1.2em;
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+
+                    .pochinko-bottom {
+                        width: 100%;
+                        //height: 108px;
+                        
+                        > div {
+                            //remove color
+                            color: white;
+                            width: 100%;
+                            height: 108px;
+                            //height: 100%;
+                            padding: 4px auto 0px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-image: url(../../assets/promo_logo_pachinko__ec7gsyeb4uqa_large.png);
+                        }
+
+                        h6 {
+                            font-size: 21px;
+                            line-height: 1.2em;
+                            margin: 14px 0px 0px 0px;
+                            color: #f5f5f7;
+                            text-align: center;
+                        }
+
+                        a {
+                            padding-top: 16px;
+                            padding-bottom: 32px;
+                            display: block;
+                            font-size: 17px;
+                            line-height: 1.2em;
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .item-img {
+                    border: 0;
+                    margin: 0;
+                    top: auto;
+                    z-index: 1;
+                    padding: 0;
+                    right: auto;
+                    bottom: 0px;
+                    height: 580px;
+                    width: 1262px;
+                    position: absolute;
+                    left: calc(50% + 0px);
+                    transform: translatex(-50%);
+                    background-repeat: no-repeat;
+                    background-size: 1262px 580px;
+                    -webkit-transform: translatex(-50%);
+                }
+
+                .studio-display {
+                    background-image: url(../../assets/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
+                }
+
+                .mac-studio {
+                    background-image: url(../../assets/promo_macstudio_avail__byhwkp0o4gty_large.jpg);
+                }
+
+                .iphone13 {
+                    background-image: url(../../assets/promo_iphone13_avail__frc36u35m0ii_large.jpg);
+                }
+
+                .watch {
+                    background-image: url(../../assets/promo_watch_lte__djeaso7ukrsm_large.jpg);
+                }
+
+                .escape-from {
+                    background-image: url(../../assets/promo_efto__9gdao7fl4sy6_large.jpg);
+                }
+
+                .pachinko {
+                    background-image: url(../../assets/promo_pachinko__ge0kbw3uikmm_large.jpg);
+                }
+
             }
         }
-
     }
 }

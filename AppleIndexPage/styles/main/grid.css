@@ -1,120 +1,190 @@
-.grid-wrapper {
-  background-color: white;
+.grid .grid-wrapper {
   display: -ms-grid;
   display: grid;
+  padding-left: 12px;
+  background-color: white;
   -ms-grid-columns: auto 50%;
       grid-template-columns: auto 50%;
-  padding-left: 12px;
-  padding-top: 12px;
 }
 
-.grid-wrapper .item-wrapper {
+.grid .grid-wrapper .item-wrapper {
   padding-right: 12px;
   padding-bottom: 12px;
   background-color: rgba(255, 255, 255, 0.92);
 }
 
-.grid-wrapper h4 {
-  margin: 53px auto 0px;
-  font-size: 40px;
-}
-
-.grid-wrapper h5 {
-  margin: 10px 0px 0px 0px;
-  font-size: 21px;
-}
-
-.grid-wrapper .iphone-links {
-  margin-top: 14px;
-  font-size: 21px;
-}
-
-.grid-wrapper .iphone-links a {
-  color: #06c;
-}
-
-.grid-wrapper .iphone-links a::after {
-  content: ">";
-  padding-left: 6px;
-}
-
-.grid-wrapper .efto-header {
-  color: rgba(0, 0, 0, 0);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../../assets/promo_logo_aaw__dq7tgf4m5ieu_large.png);
-}
-
-.grid-wrapper .item {
-  position: relative;
-  overflow: hidden;
+.grid .grid-wrapper .item-wrapper .item {
   height: 580px;
+  overflow: hidden;
+  position: relative;
 }
 
-.grid-wrapper .item .content {
-  position: relative;
+.grid .grid-wrapper .item-wrapper .item .apple-tv {
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content {
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.grid-wrapper .item .content .watch-header {
-  color: rgba(0, 0, 0, 0);
+.grid .grid-wrapper .item-wrapper .item .content h4 {
+  font-size: 40px;
   margin: 53px auto 0px;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content h5 {
+  font-size: 21px;
+  margin: 10px 0px 0px 0px;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .watch-header {
   font-size: 56px;
-  background-repeat: no-repeat;
+  margin: 53px auto 0px;
+  color: rgba(0, 0, 0, 0);
   background-position: center;
+  background-repeat: no-repeat;
   background-image: url(../../assets/logo_watch.png);
 }
 
-.grid-wrapper .item .studio-display {
+.grid .grid-wrapper .item-wrapper .item .content .efto-header {
+  width: 100%;
+  color: rgba(0, 0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/promo_logo_aaw__dq7tgf4m5ieu_large.png);
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .pochinko-header {
+  width: 100%;
+  color: rgba(0, 0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/logo_light__cfvl40z2nzau_large.png);
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .iphone-links {
+  font-size: 21px;
+  margin-top: 14px;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .iphone-links a {
+  color: #06c;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .iphone-links a::after {
+  content: ">";
+  padding-left: 6px;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .efto-bottom {
+  width: 100%;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .efto-bottom > div {
+  color: white;
+  width: 100%;
+  height: 108px;
+  padding: 4px auto 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/promo_logo_efto__c391lzc975ua_large.png);
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .efto-bottom a {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  display: block;
+  font-size: 17px;
+  line-height: 1.2em;
+  width: 100%;
+  text-align: center;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .pochinko-bottom {
+  width: 100%;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .pochinko-bottom > div {
+  color: white;
+  width: 100%;
+  height: 108px;
+  padding: 4px auto 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/promo_logo_pachinko__ec7gsyeb4uqa_large.png);
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .pochinko-bottom h6 {
+  font-size: 21px;
+  line-height: 1.2em;
+  margin: 14px 0px 0px 0px;
+  color: #f5f5f7;
+  text-align: center;
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .pochinko-bottom a {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  display: block;
+  font-size: 17px;
+  line-height: 1.2em;
+  width: 100%;
+  text-align: center;
+}
+
+.grid .grid-wrapper .item-wrapper .item .item-img {
+  border: 0;
+  margin: 0;
+  top: auto;
+  z-index: 1;
+  padding: 0;
+  right: auto;
+  bottom: 0px;
+  height: 580px;
+  width: 1262px;
+  position: absolute;
+  left: calc(50% + 0px);
+  transform: translatex(-50%);
+  background-repeat: no-repeat;
+  background-size: 1262px 580px;
+  -webkit-transform: translatex(-50%);
+}
+
+.grid .grid-wrapper .item-wrapper .item .studio-display {
   background-image: url(../../assets/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
 }
 
-.grid-wrapper .item .mac-studio {
+.grid .grid-wrapper .item-wrapper .item .mac-studio {
   background-image: url(../../assets/promo_macstudio_avail__byhwkp0o4gty_large.jpg);
 }
 
-.grid-wrapper .item .iphone13 {
+.grid .grid-wrapper .item-wrapper .item .iphone13 {
   background-image: url(../../assets/promo_iphone13_avail__frc36u35m0ii_large.jpg);
 }
 
-.grid-wrapper .item .watch {
+.grid .grid-wrapper .item-wrapper .item .watch {
   background-image: url(../../assets/promo_watch_lte__djeaso7ukrsm_large.jpg);
 }
 
-.grid-wrapper .item .escape-from {
+.grid .grid-wrapper .item-wrapper .item .escape-from {
   background-image: url(../../assets/promo_efto__9gdao7fl4sy6_large.jpg);
 }
 
-.grid-wrapper .item .pachinko {
+.grid .grid-wrapper .item-wrapper .item .pachinko {
   background-image: url(../../assets/promo_pachinko__ge0kbw3uikmm_large.jpg);
-}
-
-.grid-wrapper .item-img {
-  z-index: 1;
-  width: 1262px;
-  height: 580px;
-  background-size: 1262px 580px;
-  background-repeat: no-repeat;
-  position: absolute;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  left: calc(50% + 0px);
-  right: auto;
-  bottom: 0px;
-  top: auto;
-  -webkit-transform: translatex(-50%);
-  transform: translatex(-50%);
 }
 /*# sourceMappingURL=grid.css.map */

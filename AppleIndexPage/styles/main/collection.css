@@ -1,6 +1,14 @@
 @font-face {
-  font-family: SfPro Light;
-  src: url(../../fonts/FontsFree-Net-SFProText-Light-1.ttf);
+  font-family: SfProDisplay;
+  src: url(../../fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+.collection {
+  font-family: SfProDisplay;
+}
+
+.collection > div {
+  margin-bottom: 12px;
 }
 
 .collection .iphone-links {
@@ -10,10 +18,11 @@
 
 .collection .iphone-links a {
   color: #06c;
+  margin-right: 35px;
 }
 
 .collection .iphone-links a::after {
-  content: ">";
+  content: "\003E";
   padding-left: 6px;
 }
 
@@ -21,7 +30,7 @@
   margin: 0px;
   font-size: 28px;
   margin-top: 6px;
-  font-family: SfPro Light;
+  font-weight: 400;
 }
 
 .collection .iphone13pro {
@@ -50,7 +59,7 @@
 .collection .iphone13pro div h2 {
   margin: 0px;
   font-size: 56px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: -.005em;
   width: 100%;
   text-align: center;
@@ -106,6 +115,8 @@
 }
 
 .collection .iphoneSE p {
+  margin: 0px;
+  padding-top: 55px;
   font-size: 21px;
   line-height: 1.2;
   font-weight: 600;
