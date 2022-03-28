@@ -19,6 +19,7 @@ body {
 
     // General for all main images
     .main-img {
+        z-index: -1;
         bottom: 0px;
         position: absolute;
         left: calc(50% + 0px);
@@ -32,6 +33,7 @@ body {
     .details-links {
         font-size: 21px;
         margin-top: 14px;
+        z-index: 10;
 
         @media only screen and (max-width: 1068px) {
             font-size: 19px;
@@ -54,7 +56,7 @@ body {
 
     > section {
         .content {
-            z-index: 2;
+            //z-index: 2;
             display: flex;
             justify-content: center;
             position: relative;
