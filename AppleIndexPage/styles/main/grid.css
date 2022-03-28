@@ -11,107 +11,90 @@
   background-color: rgba(255, 255, 255, 0.92);
 }
 
+.grid .grid-wrapper .item-wrapper:nth-child(3) {
+  color: white;
+}
+
 .grid .grid-wrapper .item-wrapper .item {
   height: 580px;
   overflow: hidden;
   position: relative;
 }
 
-.grid .grid-wrapper .item-wrapper .item .content {
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item {
+    height: 490px;
+  }
 }
 
-.grid .grid-wrapper .item-wrapper .item .sale h4 {
+.grid .grid-wrapper .item-wrapper .item .content h4 {
   font-size: 40px;
   margin: 53px auto 0px;
 }
 
-.grid .grid-wrapper .item-wrapper .item .sale h5 {
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .content h4 {
+    margin: 42px auto 0px;
+    font-size: 32px;
+  }
+}
+
+.grid .grid-wrapper .item-wrapper .item .content h5 {
+  text-align: center;
   font-size: 21px;
   margin: 10px 0px 0px 0px;
 }
 
-.grid .grid-wrapper .item-wrapper .item .sale .watch-header {
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .content h5 {
+    font-size: 19px;
+  }
+}
+
+.grid .grid-wrapper .item-wrapper .item .content .header {
   height: 56px;
   width: 100%;
   margin: 53px auto 0px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../../assets/logo_watch.png);
 }
 
-.grid .grid-wrapper .item-wrapper .item .apple-tv {
-  height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .content .header {
+    margin: 44px auto 0px;
+    height: 30px;
+  }
 }
 
-.grid .grid-wrapper .item-wrapper .item .apple-tv .header {
-  height: 40px;
-  width: 100%;
-  margin-top: 53px;
-  color: rgba(0, 0, 0, 0);
-  background-position: center;
-  background-repeat: no-repeat;
+.grid .grid-wrapper .item-wrapper .item .content .watch {
+  background-image: url(../../assets/largest/logo_watch.png);
 }
 
-.grid .grid-wrapper .item-wrapper .item .apple-tv .bottom {
-  width: 100%;
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .content .watch {
+    height: 45px;
+    background-image: url(../../assets/medium/promo_logo_watch_lte__emrof7zzkriq_medium.png);
+  }
 }
 
-.grid .grid-wrapper .item-wrapper .item .apple-tv .bottom > div {
-  color: white;
-  width: 100%;
-  height: 108px;
-  padding: 4px auto 0px;
-  background-repeat: no-repeat;
-  background-position: center;
+.grid .grid-wrapper .item-wrapper .item .content .ipad {
+  background-image: url(../../assets/largest/logo_ipadair.png);
 }
 
-.grid .grid-wrapper .item-wrapper .item .apple-tv .bottom a {
-  padding-top: 16px;
-  padding-bottom: 32px;
-  display: block;
-  font-size: 17px;
-  line-height: 1.2em;
-  width: 100%;
-  text-align: center;
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .content .ipad {
+    background-image: url(../../assets/medium/promo_logo_ipadair__frwnnsqveeye_medium.png);
+  }
 }
 
-.grid .grid-wrapper .item-wrapper .item .apple-tv .bottom h6 {
-  font-size: 21px;
-  line-height: 1.2em;
-  margin: 14px 0px 0px 0px;
-  color: #f5f5f7;
-  text-align: center;
+.grid .grid-wrapper .item-wrapper .item .content .card {
+  background-image: url(../../assets/largest/logo__dcojfwkzna2q_large.png);
 }
 
-.grid .grid-wrapper .item-wrapper .item .apple-tv .efto_h {
-  background-image: url(../../assets/largest/promo_logo_aaw__dq7tgf4m5ieu_large.png);
-}
-
-.grid .grid-wrapper .item-wrapper .item .apple-tv .pochinko_h {
-  background-image: url(../../assets/largest/logo_light__cfvl40z2nzau_large.png);
-}
-
-.grid .grid-wrapper .item-wrapper .item .apple-tv .efto_b > div {
-  background-image: url(../../assets/largest/promo_logo_efto__c391lzc975ua_large.png);
-}
-
-.grid .grid-wrapper .item-wrapper .item .apple-tv .pochinko_b > div {
-  background-image: url(../../assets/largest/promo_logo_pachinko__ec7gsyeb4uqa_large.png);
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .content .card {
+    background-image: url(../../assets/medium/logo__dcojfwkzna2q_medium.png);
+  }
 }
 
 .grid .grid-wrapper .item-wrapper .item .main-img {
@@ -120,27 +103,71 @@
   background-size: 1262px 580px;
 }
 
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .main-img {
+    height: 490px;
+    width: 516px;
+    background-size: 516px 490px;
+  }
+}
+
 .grid .grid-wrapper .item-wrapper .item .studio-display {
   background-image: url(../../assets/largest/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg);
+}
+
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .studio-display {
+    background-image: url(../../assets/medium/promo_studiodisplay_avail__d1cx9j73ooq6_medium.jpg);
+  }
 }
 
 .grid .grid-wrapper .item-wrapper .item .mac-studio {
   background-image: url(../../assets/largest/promo_macstudio_avail__byhwkp0o4gty_large.jpg);
 }
 
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .mac-studio {
+    background-image: url(../../assets/medium/promo_macstudio_avail__byhwkp0o4gty_medium.jpg);
+  }
+}
+
 .grid .grid-wrapper .item-wrapper .item .iphone13 {
   background-image: url(../../assets/largest/promo_iphone13_avail__frc36u35m0ii_large.jpg);
+}
+
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .iphone13 {
+    background-image: url(../../assets/medium/promo_iphone13_avail__frc36u35m0ii_medium.jpg);
+  }
 }
 
 .grid .grid-wrapper .item-wrapper .item .watch {
   background-image: url(../../assets/largest/promo_watch_lte__djeaso7ukrsm_large.jpg);
 }
 
-.grid .grid-wrapper .item-wrapper .item .escape-from {
-  background-image: url(../../assets/largest/promo_efto__9gdao7fl4sy6_large.jpg);
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .watch {
+    background-image: url(../../assets/medium/promo_watch_lte__djeaso7ukrsm_medium.jpg);
+  }
 }
 
-.grid .grid-wrapper .item-wrapper .item .pachinko {
-  background-image: url(../../assets/largest/promo_pachinko__ge0kbw3uikmm_large.jpg);
+.grid .grid-wrapper .item-wrapper .item .ipadair {
+  background-image: url(../../assets/largest/promo_ipadair_avail__ferd4bfpcdm6_large.jpg);
+}
+
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .ipadair {
+    background-image: url(../../assets/medium/promo_ipadair_avail__ferd4bfpcdm6_medium.jpg);
+  }
+}
+
+.grid .grid-wrapper .item-wrapper .item .card {
+  background-image: url(../../assets/largest/tile__cauwwcyyn9hy_large.jpg);
+}
+
+@media only screen and (max-width: 1068px) {
+  .grid .grid-wrapper .item-wrapper .item .card {
+    background-image: url(../../assets/medium/tile__cauwwcyyn9hy_medium.jpg);
+  }
 }
 /*# sourceMappingURL=grid.css.map */

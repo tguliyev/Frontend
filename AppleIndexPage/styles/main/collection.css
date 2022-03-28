@@ -14,53 +14,132 @@
   overflow: hidden;
 }
 
-.collection > div .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 55px;
-  position: relative;
+@media only screen and (max-height: 775px) {
+  .collection > div {
+    height: 580px;
+  }
 }
 
-.collection > div .content p {
+@media only screen and (max-width: 1068px) {
+  .collection > div {
+    height: 650px;
+  }
+}
+
+.collection > div p {
   margin: 0px;
   font-size: 21px;
+}
+
+.collection > div h2 {
+  margin: 0px;
+}
+
+.collection > div .sale {
+  padding-top: 55px;
+}
+
+@media only screen and (max-height: 775px) {
+  .collection > div .sale {
+    padding-top: 47px;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .collection > div .sale {
+    padding-top: 61px;
+  }
+}
+
+.collection > div .sale p {
   line-height: 1.2;
   font-weight: 600;
 }
 
-.collection > div .content h2 {
-  margin: 0px;
+.collection > div .sale h2 {
   font-size: 56px;
   width: 100%;
   text-align: center;
 }
 
-.collection > div .content h3 {
+@media only screen and (max-width: 1068px) {
+  .collection > div .sale h2 {
+    font-size: 48px;
+  }
+}
+
+.collection > div .sale h3 {
   margin: 6px 0px 0px 0px;
   font-size: 28px;
   font-weight: 400;
 }
 
-.collection > div .content .header-logo {
+@media only screen and (max-width: 1068px) {
+  .collection > div .sale h3 {
+    font-size: 24px;
+  }
+}
+
+.collection > div .sale .header-logo {
   height: 55px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.collection > div .content a {
-  margin-right: 35px;
+@media only screen and (max-width: 1068px) {
+  .collection > div .sale .header-logo {
+    height: 48px;
+  }
+}
+
+.collection > div .apple-tv {
+  color: #fff;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collection > div .apple-tv .header {
+  padding-top: 28px;
+  font-size: 21px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .collection > div .apple-tv .header {
+    padding-top: 61px;
+  }
+}
+
+.collection > div .apple-tv .header > div {
+  margin-top: 5px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/largest/hero_logo_coda__egdgy3v1cyc2_large.png);
+}
+
+.collection > div .apple-tv .bottom {
+  padding-bottom: 31px;
+}
+
+.collection > div .apple-tv .bottom h2 {
+  margin: 11px auto 0px;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.collection > div .apple-tv .bottom a {
+  display: block;
+  text-align: center;
+  font-size: 21px;
+}
+
+.collection > div .apple-tv .bottom a::after {
+  content: "\25B6";
+  padding-left: 6px;
 }
 
 .collection > div.iphone13pro .main-img {
@@ -69,7 +148,13 @@
 
 @media only screen and (max-height: 775px) {
   .collection > div.iphone13pro .main-img {
-    background-image: url(../../assets/iphone13pro.jpg);
+    background-image: url(../../assets/large/iphone13pro.jpg);
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .collection > div.iphone13pro .main-img {
+    background-image: url(../../assets//medium/hero_iphone13pro_avail__iy77cld0zwii_mediumtall.jpg);
   }
 }
 
@@ -77,31 +162,70 @@
   background-image: url(../../assets/largest/logo_iphonese.png);
 }
 
+@media only screen and (max-width: 1068px) {
+  .collection > div.iphoneSE .header-logo {
+    background-image: url(../../assets//medium/logo_hero_iphonese__dtb7zrygggeq_mediumtall.png);
+  }
+}
+
 .collection > div.iphoneSE .main-img {
   background-image: url(../../assets/largest/iphonese.jpg);
 }
 
-.collection > div.ipadair .content {
-  padding-top: 253px;
-  right: 337px;
+@media only screen and (max-height: 775px) {
+  .collection > div.iphoneSE .main-img {
+    background-image: url(../../assets/large/hero_iphonese_avail__eg8srhcnpo66_large.jpg);
+  }
 }
 
-.collection > div.ipadair .content .header-logo {
+@media only screen and (max-width: 1068px) {
+  .collection > div.iphoneSE .main-img {
+    background-image: url(../../assets//medium/hero_iphonese_avail__eg8srhcnpo66_mediumtall.jpg);
+  }
+}
+
+.collection > div.coda .header-logo {
   background-image: url(../../assets/largest/logo_ipadair.png);
 }
 
-.collection > div.ipadair .content h3 {
+.collection > div.coda h3 {
   color: #fff;
 }
 
-.collection > div.ipadair .main-img {
-  background-image: url(../../assets/largest/ipadair.jpg);
+.collection > div.coda .main-img {
+  background-image: url(../../assets/largest/hero_coda__cv3jny7jpe6a_largetall.jpg);
+}
+
+@media only screen and (max-height: 775px) {
+  .collection > div.coda .main-img {
+    background-image: url(../../assets/large/hero_coda__cv3jny7jpe6a_large.jpg);
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .collection > div.coda .main-img {
+    background-image: url(../../assets//medium/hero_coda__cv3jny7jpe6a_mediumtall.jpg);
+  }
 }
 
 .collection > div .main-img {
-  z-index: -1;
   width: 3008px;
   height: 736px;
   background-size: 3008px 736px;
+}
+
+@media only screen and (max-height: 775px) {
+  .collection > div .main-img {
+    height: 624px;
+    background-size: 3008px 624px;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .collection > div .main-img {
+    width: 1068px;
+    height: 694px;
+    background-size: 1068px 694px;
+  }
 }
 /*# sourceMappingURL=collection.css.map */

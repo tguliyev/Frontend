@@ -12,32 +12,55 @@
         position: relative;
         overflow: hidden;
 
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        @media only screen and (max-height: 775px) {
+            height: 580px;
+        }
+        @media only screen and (max-width: 1068px) {
+            height: 650px;
+        }
+
+        p {
+            margin: 0px;
+            font-size: 21px;
+        }
+
+        h2 {
+            margin: 0px;
+        }
+
+        .sale {
             padding-top: 55px;
-            position: relative; //for .ipadair .content
+            
+            @media only screen and (max-height: 775px) {
+                padding-top: 47px;
+            }
+            @media only screen and (max-width: 1068px) {
+                padding-top: 61px;
+            }
 
             p {
-                margin: 0px;
-                font-size: 21px;
                 line-height: 1.2;
                 font-weight: 600;
             }
 
             h2 {
-                margin: 0px;
                 font-size: 56px;
                 width: 100%;
                 text-align: center;
+
+                @media only screen and (max-width: 1068px) {
+                    font-size: 48px;
+                }
             }
 
             h3 {
                 margin: 6px 0px 0px 0px;
                 font-size: 28px;
                 font-weight: 400;
+
+                @media only screen and (max-width: 1068px) {
+                    font-size: 24px;
+                }
             }
 
             .header-logo {
@@ -45,21 +68,67 @@
                 width: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
+
+                @media only screen and (max-width: 1068px) {
+                    height: 48px;
+                }
+            }
+        }
+        
+        .apple-tv {
+            color: #fff;
+            height: 100%;
+            justify-content: space-between;
+            
+            .header {
+                padding-top: 28px;
+                font-size: 21px;
+                
+                @media only screen and (max-width: 1068px) {
+                    padding-top: 61px;
+                }
+                
+                > div {
+                    margin-top: 5px;
+                    height: 50px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: url(../../assets/largest/hero_logo_coda__egdgy3v1cyc2_large.png);
+                }
             }
 
-            // For .iphone-links
-            a {
-                margin-right: 35px;
+            .bottom {
+                padding-bottom: 31px;
+                
+                h2 {
+                    margin: 11px auto 0px;
+                    font-size: 28px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                a {
+                    display: block;
+                    text-align: center;
+                    font-size: 21px;
+                    
+                    &::after {
+                        // can not find the same symbol
+                        content: "\25B6";
+                        padding-left: 6px;
+                    }
+                }
             }
         }
 
         &.iphone13pro {
             .main-img {
                 background-image: url(../../assets/largest/hero_iphone13pro.jpg);
-                @media only screen and (min-height: 776px) {
-                }
                 @media only screen and (max-height: 775px) {
-                    background-image: url(../../assets/iphone13pro.jpg);
+                    background-image: url(../../assets/large/iphone13pro.jpg);
+                }
+                @media only screen and (max-width: 1068px) {
+                    background-image: url(../../assets//medium/hero_iphone13pro_avail__iy77cld0zwii_mediumtall.jpg);
                 }
             }
         }
@@ -67,37 +136,54 @@
         &.iphoneSE {
             .header-logo {
                 background-image: url(../../assets/largest/logo_iphonese.png);
+                @media only screen and (max-width: 1068px) {
+                    background-image: url(../../assets//medium/logo_hero_iphonese__dtb7zrygggeq_mediumtall.png);
+                }
             }
             .main-img {
                 background-image: url(../../assets/largest/iphonese.jpg);
+                @media only screen and (max-height: 775px) {
+                    background-image: url(../../assets/large/hero_iphonese_avail__eg8srhcnpo66_large.jpg);
+                }
+                @media only screen and (max-width: 1068px) {
+                    background-image: url(../../assets//medium/hero_iphonese_avail__eg8srhcnpo66_mediumtall.jpg);
+                }
             }
         }
 
-        &.ipadair {
+        &.coda {
 
-            .content {
-                padding-top: 253px;
-                right: 337px;
-
-                .header-logo {
-                    background-image: url(../../assets/largest/logo_ipadair.png);
-                }
-
-                h3 {
-                    color: #fff;
-                }
+            .header-logo {
+                background-image: url(../../assets/largest/logo_ipadair.png);
             }
-
+            h3 {
+                color: #fff;
+            }
             .main-img {
-                background-image: url(../../assets/largest/ipadair.jpg);
+                background-image: url(../../assets/largest/hero_coda__cv3jny7jpe6a_largetall.jpg);
+                @media only screen and (max-height: 775px) {
+                    background-image: url(../../assets/large/hero_coda__cv3jny7jpe6a_large.jpg);
+                }
+                @media only screen and (max-width: 1068px) {
+                    background-image: url(../../assets//medium/hero_coda__cv3jny7jpe6a_mediumtall.jpg);
+                }
             }
         }
 
         .main-img {
-            z-index: -1;
             width: 3008px;
             height: 736px;
             background-size: 3008px 736px;
+            
+            @media only screen and (max-height: 775px) {
+                height: 624px;
+                background-size: 3008px 624px;
+            }
+            @media only screen and (max-width: 1068px) {
+                width: 1068px;
+                height: 694px;
+                background-size: 1068px 694px;
+            }
         }
     }
 }

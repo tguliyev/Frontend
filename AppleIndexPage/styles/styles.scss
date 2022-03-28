@@ -28,12 +28,18 @@ body {
         transform: translatex(-50%);
     }
 
+    // General for all items links
     .details-links {
         font-size: 21px;
         margin-top: 14px;
 
+        @media only screen and (max-width: 1068px) {
+            font-size: 19px;
+        }
+
         a {
             color: #06c;
+            margin-right: 35px;
 
             &:hover {
                 border-bottom: solid 1px;
@@ -43,6 +49,17 @@ body {
                 content: ">";
                 padding-left: 6px;
             }
+        }
+    }
+
+    > section {
+        .content {
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            flex-direction: column;
         }
     }
 }
