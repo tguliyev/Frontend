@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            body {
+                color: aliceblue;
+            }
+
+            #timer {
+                margin: auto;
+                width: 300px;
+                padding: 20px;
+                background-color: #002a36;
+                border-radius: 20px;
+            }
+            
+            #counter {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                background-color: #083d4b;
+            }
+
+            #buttons {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                justify-content: space-around;
+            }
+
+            button {
+                background-color: #29a198;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                padding: 10px;
+                font-size: 16px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="timer">
+            <div id="counter">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span>:</span>
+                <span id="milliseconds">00</span>
+            </div>
+            <div id="buttons">
+                <button id="start" onclick="startLoop()">Start</button>
+                <button id="stop" onclick="stopLoop()">Stop</button>
+                <button id="reset" onclick="resetLoop()">Reset</button>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
