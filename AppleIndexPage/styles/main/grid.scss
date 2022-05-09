@@ -6,6 +6,7 @@
         grid-template-columns: auto 50%;
 
         .item-wrapper {
+            z-index: 1;
             padding: 0px 12px 12px 0px;
             background-color: rgba(255,255,255,0.92);
 

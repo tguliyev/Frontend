@@ -18,6 +18,7 @@ body ul {
 }
 
 body .main-img {
+  z-index: -1;
   bottom: 0px;
   position: absolute;
   left: calc(50% + 0px);
@@ -31,6 +32,7 @@ body .main-img {
 body .details-links {
   font-size: 21px;
   margin-top: 14px;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 1068px) {
@@ -54,7 +56,6 @@ body .details-links a::after {
 }
 
 body > section .content {
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
