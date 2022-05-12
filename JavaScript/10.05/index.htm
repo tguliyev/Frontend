@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            #wrapper {
+                width: 500px;
+                margin: 50px auto 0px;
+            }
+
+            #buttons {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            button, textarea, select {
+                width: 100%;
+            }
+            
+            .bold {
+                font-weight: bold;
+            }
+
+            .italic {
+                font-style: italic;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <div id="buttons">
+                <button id="bold">B</button>
+                <button id="italic">I</button>
+                <button id="underline">U</button>
+                <select id="fonts">
+                    <option value="monospace">Monospace</option>
+                    <option value="arial">Arial</option>
+                    <option value="verdana">Verdana</option>
+                    <option value="times">Times</option>
+                </select>
+                <select id="colors">
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./mian.js"></script>
+    </body>
+</html>
