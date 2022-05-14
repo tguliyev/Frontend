@@ -13,8 +13,18 @@
                 display: flex;
                 justify-content: space-between;
             }
+
+            textarea {
+                padding: 0;
+                border: solid black 1px;
+                resize: none;
+            }
             
-            button, textarea, select {
+            textarea:focus {
+                outline: none;
+            }
+            
+            button, textarea, select, input {
                 width: 100%;
             }
             
@@ -45,12 +55,7 @@
                     <option value="verdana">Verdana</option>
                     <option value="times">Times</option>
                 </select>
-                <select id="colors">
-                    <option value="black">Black</option>
-                    <option value="green">Green</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                </select>
+                <input type="color" name="color" id="colors">
             </div>
             <textarea name="text" id="text" cols="30" rows="10"></textarea>
         </div>
