@@ -32,7 +32,7 @@
                 display: none;
             }
 
-            #wrapper .line {
+            #button .line {
                 display: block;
                 width: 15px;
                 height: 1px;
@@ -74,10 +74,10 @@
                 mobileNav.append('<li id="hamburger"></li>')
 
                 const hamburger = $('#hamburger')
-                hamburger.append('<div id="wrapper"></div>')
+                hamburger.append('<div id="button"></div>')
                 
-                const wrapper = $('#wrapper')
-                wrapper
+                const button = $('#button')
+                button
                       .append('<span class="line"></span>')
                       .append('<span class="line"></span>')
 
@@ -92,10 +92,10 @@
 
                 function toggleWrapper() {
                     if (buttonState) {
-                        wrapper.children().first().css({ transform: 'translateY(3px) rotate(45deg)' })
-                        wrapper.children().last().css({ transform: 'translateY(-3px) rotate(-45deg)' })
+                        button.children().first().css({ transform: 'translateY(3px) rotate(45deg)' })
+                        button.children().last().css({ transform: 'translateY(-3px) rotate(-45deg)' })
                     }
-                    else wrapper.children().css({ transform: 'translateY(0px) rotate(0deg)' })
+                    else button.children().css({ transform: 'translateY(0px) rotate(0deg)' })
                     buttonState = !buttonState
                 }
                 
