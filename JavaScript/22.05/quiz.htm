@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            body {display: flex; height: 100vh; margin: 0}
+            #form { margin: auto; padding: 2em; box-shadow: 0 0 5px #666; text-align: center; width: 400px }
+            #ul {list-style: none; text-align: left; padding: 0 0 0 100px }
+            #ul li {padding: 5px }
+        </style>
+    </head>
+    <body>
+        <div id="form">
+            <h1 id="h1">Quiz</h1>
+            <h2 id="h2">....</h2>
+            <ul id="ul"></ul>
+            <button id="btn">Başla</button>
+        </div>
+        
+        <script>
+            const h1 = document.getElementById("h1")
+            const h2 = document.getElementById("h2")
+            const ul = document.getElementById("ul")
+            const btn = document.getElementById("btn")
+            const ajax = new XMLHttpRequest()
+            let quiz, test
+            let n = 0
+            let cavab = []
+
+            ajax.open('GET', 'quiz.json')
+            ajax.send()
+            ajax.onload = function(){
+                quiz = JSON.parse( ajax.responseText )
+                h2.innerHTML = quiz.title
+                test = quiz.question
+            }
+
+            btn.onclick = function(){
+                btn.innerText = "Next"
+                next()
+            }
+
+            function next(){
+                if (n > 0) record()
+                if (n < test.length) {
+                    h1.innerHTML = `Sual #${n + 1}`
+                    h2.innerHTML = test[n].q
+                    let kod = ''
+                    test[n].a.forEach(sual => kod += `<li><label><input name="a" type="radio"> ${sual}</label></li>`)
+                    ul.innerHTML = kod
+                    n++
+                }
+            }
+
+            function record(){
+                cavab.push('-') 
+                let cvb = ul.querySelectorAll("[name=a]")
+                for(let i = 0; i < cvb.length; i++) {
+                    if(cvb[i].checked) cavab[cavab.length - 1] = i
+                }
+                if(cavab.length == test.length) result()
+            }
+
+            function result(){
+                h1.innerHTML = quiz.title
+                h2.innerHTML = "Nəticələri"
+                console.log(cavab.length, cavab)
+                btn.remove()
+
+                let correct = 0
+                let mistake = 0
+                for (let i = 0; i < cavab.length; i++) {
+                    if (cavab[i] == test[i].t) correct++
+                    else if (cavab[i] != '-') mistake++
+                }
+
+                ul.innerHTML = `<li>Duzgun cavab ${correct}</li>` + 
+                                `<li>Sehv cavab ${mistake}</li>` + 
+                                `<li>Bosh galan ${cavab.length - (correct + mistake)}</li>`
+            }
+        </script>
+    </body>
+</html>
